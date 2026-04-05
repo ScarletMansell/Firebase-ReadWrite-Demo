@@ -35,7 +35,8 @@ pip install -r requirements.txt
 3. In Firebase, go to Settings -> Service Accounts and generate a private key. It'll download as a .json file
 ## Reading and Writing to your Database
 1. Rename your key to 'serviceAccountKey.json' -- BE SURE TO KEEP THIS KEY PRIVATE
-2. Write to your database with write_data.py, by running this in a command prompt:
+2. Move this key to your Desktop/Firebase-ReadWrite-Demo folder
+3. Write to your database with write_data.py, by running this in a command prompt:
 ```
 python write_data.py
 ```

@@ -16,15 +16,18 @@
 ## Setup
 
 1. Open command prompt
-2. Enter your desktop by running 'cd Desktop'
-3. Clone this repo and enter it with:
-```bash
+2. Enter your desktop by running:
+```
+cd desktop
+```
+4. Clone this repo and enter it with:
+```
 git clone https://github.com/ScarletMansell/Firebase-ReadWrite-Demo.git
-Firebase-ReadWrite-Demo
+cd Firebase-ReadWrite-Demo
 ```
 4. Clone this repo with
 5. Install dependencies with:
-```bash
+```
 pip install -r requirements.txt
 ```
 ## Setting up Firebase:

@@ -25,7 +25,6 @@ cd desktop
 git clone https://github.com/ScarletMansell/Firebase-ReadWrite-Demo.git
 cd Firebase-ReadWrite-Demo
 ```
-4. Clone this repo with
 5. Install dependencies with:
 ```
 pip install -r requirements.txt

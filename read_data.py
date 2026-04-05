@@ -6,11 +6,26 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-doc_ref = db.collection("users").document("user_1")
-doc = doc_ref.get()
-# get to reading document
-if doc.exists:
-    print("Document data:")
-    print(doc.to_dict())
-else:
-    print("No such document.")
+print("=== All Data in Firestore ===\n")
+
+collections = db.collections()
+
+found_data = False
+
+for collection in collections:
+    print(f"Collection: {collection.id}")
+    docs = collection.stream()
+
+    has_docs = False
+    for doc in docs:
+        has_docs = True
+        found_data = True
+        print(f"  Document ID: {doc.id}")
+        print(f"  Data: {doc.to_dict()}")
+        print()
+
+    if not has_docs:
+        print("  (No documents)\n")
+
+if not found_data:
+    print("No data found in the database.")
